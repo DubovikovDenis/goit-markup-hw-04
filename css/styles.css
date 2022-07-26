@@ -389,21 +389,17 @@ font-family: var(--primary-font);
         gap: 30px;
 }
 
-.client-list-item {
+
+.client-link {
+        display: flex;
         width: 170px;
         height: 92px;
-        display: flex;
         justify-content: center;
         align-items: center;
         border: 1px solid;
         border-radius: 4px;
         border-color: #AFB1B8;
-}
 
-.client-link {
-        display: flex;
-        justify-content: center;
-        text-align: center;
 }
 
 .client-link:hover .client-icon,
@@ -413,7 +409,6 @@ font-family: var(--primary-font);
 
 .client-link:hover,
 .client-link:focus {
-        fill: var(--accent-color);
         border: 1px solid var(--accent-color);
 }
 
@@ -539,7 +534,26 @@ font-family: var(--primary-font);
 
 .footer-container {
         display: flex;
-        justify-content: baseline;
+        align-items: baseline;
+}
+
+.footer-link {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 16px;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                color: #FFFFFF;
+}
+
+.social-link-container {
+        margin-left: 70px;
+        width: 206px;
+        height: 80px;
+        
+        
 }
 /* ----------PORTFOLIO---------- */
 
@@ -578,6 +592,10 @@ font-family: var(--primary-font);
         padding-left: 22px;
         border:none;
 }
+.filtr-button:hover,
+.filtr-button:focus {
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 
 /*  ---------- OUR PROJECTS SECTION----------*/
 
@@ -615,7 +633,9 @@ font-family: var(--primary-font);
         color: var(--secondary-text-colour);
 }
 
-
+.project-card:hover {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
 
 
